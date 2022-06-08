@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <button    onclick="changeCalculator('normal_calculator')">CALCULATOR</button>
+        <button    onclick="changeCalculator('scientific_calculator')" >SCI-CALCULATOR</button>
+        <button    onclick="changeCalculator('programmers_calculator')" >PRO-CALCULATOR</button>
+        <button    onclick="changeCalculator('conversion_calculator')">CONVERSIONS</button>
+    </div>
+    <div class="main" id="main">
+        <div id="Visiblecalculator"><div></div></div>
+            
+        </div>
+
+    </div>
+
+    <template class="templateCalculator" id="normal_calculator"><div id="fromTemplate">
+        <div id="interface">
+            <input id="input" type="text"><br>
+            <label id="output">hello</label>
+        </div>
+        
+        <div id="buttons">
+            <div class="row" id="row1">
+                <button class="col" id="col1">1</button>
+                <button class="col" id="col2"></button>
+                <button class="col" id="col3"></button>
+                <button class="col" id="col4"></button>
+                <button class="col" id="col5"></button>
+            </div>
+            <div class="row" id="row2">
+                <button class="col" id="col1">1</button>
+                <button class="col" id="col2"></button>
+                <button class="col" id="col3"></button>
+                <button class="col" id="col4"></button>
+                <button class="col" id="col5"></button>
+            </div>
+            <div class="row" id="row3">
+                <button class="col" id="col1">1</button>
+                <button class="col" id="col2"></button>
+                <button class="col" id="col3"></button>
+                <button class="col" id="col4"></button>
+                <button class="col" id="col5"></button>
+            </div>
+            <div class="row" id="row4">
+                <button class="col" id="col1">1</button>
+                <button class="col" id="col2"></button>
+                <button class="col" id="col3"></button>
+                <button class="col" id="col4"></button>
+                <button class="col" id="col5"></button>
+            </div>
+            <div class="row" id="row5">
+                <button class="col" id="col1">1</button>
+                <button class="col" id="col2"></button>
+                <button class="col" id="col3"></button>
+                <button class="col" id="col4"></button>
+                <button class="col" id="col5"></button>
+            </div>
+        </div>
+    </div></template>
+
+
+</body>
+</html>
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
