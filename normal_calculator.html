@@ -6,64 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><div id="calculator">
-    <div id="interface">
-        <input id="input" type="text">
-        <label id="output">hello</label>
+<body>
+    <div>
+    <table aria-colcount="11" aria-rowcount="6">
+        <tr aria-colspan="15"><input type="text"></tr><br>
+        <tr aria-colspan="15"><input type="text"></tr><br>
+        <tr>
+            <button>&#8592;</button>
+            <button>Cl</button><br>
+        </tr>
+        <tr >
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button >sin</button>
+            <button >cos</button>
+            <button >tan</button>
+            <button>π </button>  <!--under root √-->
+        </tr><br>
+        <tr >
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button >sin&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
+            <button >cos&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
+            <button >tan&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
+            <button>&#8730;</button>  <!--under root √-->
+        </tr><br>
+        <tr >
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>x</button>
+            <button >ℯ&#8319;</button>
+            <button >ln(x)</button></button>
+            <button >x&#8315;&#185;</button>
+            <button>π </button>  
+        </tr><br>
+        <tr >
+            <button>0</button>
+            <button>(</button>
+            <button>)</button>
+            <button>/</button>
+            <button >x&#8319;</button>
+            <button >x&#178;</button></button>
+            <button >|x|</button>
+            <button>=</button>  
+        </tr><br>
+    </table>
     </div>
-    
-    <div id="buttons">
-        <div id="nums">
-            <button >1</button>
-            <button >2</button>
-            <button >3</button>
-            <button >4</button>
-            <button >5</button>
-            <button >6</button>
-            <button >7</button>
-            <button >8</button>
-            <button >9</button>
-            <button >0</button>l
-        </div>
-        <div>
-            <button >+</button>
-            <button >-</button>
-            <button >x</button>
-            <button >/</button>
-            <button >(</button>
-            <button >)</button>
-            <button >=</button>
-            <button >^2</button>
-            <button ></button>
-            <button ></button>
-            <button ></button>
-            <button ></button>
-            <button ></button>
-            <button ></button>
-            <button ></button>
-        </div>
-    </div>
-</div></body>
+</body>
 </html>
 <style>
-    
-    #interface{
-        display: grid;
-        column-gap: 10px;
-    }
-    #calculator{
-        display: grid;
-        column-gap: 10px;
-        text-align: right;
-        width: 50%;
-        margin-left: 25%;
+    div{
+        
+        width: 60%;
+        margin-left: 20%;
         margin-top: 10%;
     }
-    #output{
-        text-align: right;
+    button{
+        width: 40px;
+        height: 30px;
+        margin: 2px;
+        border-radius: 3px;
+        border-style: groove;
     }
-    #nums{
-        float: left;
-        width: 33%;
-    }    
+    input{
+        width: 340px;
+    }
 </style>
