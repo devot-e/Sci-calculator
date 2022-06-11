@@ -6,76 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div id="calculator">
-        <div id="interface">
-            <input id="input" type="text"><br>
-            <label id="output">hello</label>
+<body><div id="calculator">
+    <div id="interface">
+        <input id="input" type="text">
+        <label id="output">hello</label>
+    </div>
+    
+    <div id="buttons">
+        <div class="row" id="row1">
+            <button class="col" id="col1">1</button>
+            <button class="col" id="col2"></button>
+            <button class="col" id="col3"></button>
+            <button class="col" id="col4"></button>
+            <button class="col" id="col5"></button>
         </div>
-        
-        <div id="buttons">
-            <div class="row" id="row1">
-                <button class="col" id="col1">1</button>
-                <button class="col" id="col2"></button>
-                <button class="col" id="col3"></button>
-                <button class="col" id="col4"></button>
-                <button class="col" id="col5"></button>
-            </div>
-            <div class="row" id="row2">
-                <button class="col" id="col1">1</button>
-                <button class="col" id="col2"></button>
-                <button class="col" id="col3"></button>
-                <button class="col" id="col4"></button>
-                <button class="col" id="col5"></button>
-            </div>
-            <div class="row" id="row3">
-                <button class="col" id="col1">1</button>
-                <button class="col" id="col2"></button>
-                <button class="col" id="col3"></button>
-                <button class="col" id="col4"></button>
-                <button class="col" id="col5"></button>
-            </div>
-            <div class="row" id="row4">
-                <button class="col" id="col1">1</button>
-                <button class="col" id="col2"></button>
-                <button class="col" id="col3"></button>
-                <button class="col" id="col4"></button>
-                <button class="col" id="col5"></button>
-            </div>
-            <div class="row" id="row5">
-                <button class="col" id="col1">1</button>
-                <button class="col" id="col2"></button>
-                <button class="col" id="col3"></button>
-                <button class="col" id="col4"></button>
-                <button class="col" id="col5"></button>
-            </div>
+        <div class="row" id="row2">
+            <button class="col" id="col1">1</button>
+            <button class="col" id="col2"></button>
+            <button class="col" id="col3"></button>
+            <button class="col" id="col4"></button>
+            <button class="col" id="col5"></button>
+        </div>
+        <div class="row" id="row3">
+            <button class="col" id="col1">1</button>
+            <button class="col" id="col2"></button>
+            <button class="col" id="col3"></button>
+            <button class="col" id="col4"></button>
+            <button class="col" id="col5"></button>
+        </div>
+        <div class="row" id="row4">
+            <button class="col" id="col1">1</button>
+            <button class="col" id="col2"></button>
+            <button class="col" id="col3"></button>
+            <button class="col" id="col4"></button>
+            <button class="col" id="col5"></button>
+        </div>
+        <div class="row" id="row5">
+            <button class="col" id="col1">1</button>
+            <button class="col" id="col2"></button>
+            <button class="col" id="col3"></button>
+            <button class="col" id="col4"></button>
+            <button class="col" id="col5"></button>
         </div>
     </div>
-</body>
+</div></body>
 </html>
 <style>
-    
-    #input{
-        width: 91%;
-        height: fit-content;
-        font-size: 80px;
-    }
-    #output{
-        background-color: rgba(red, green, blue, .4);
-        height: fit-content;
-        font-size: 80px;
+    #interface{
+        display: grid;
     }
     #calculator{
-       
-        height: 100%;
-        width: 100%;
-        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 10%;
     }
-    button{
-        width: fit-content;
-        margin: 0ch;
-        height: fit-content;
-        font-size: 80px;
+    #output{
+        text-align: right;
+    }
+    #bottons{
+        display: grid;
         
     }
 </style>
