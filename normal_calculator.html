@@ -11,9 +11,15 @@
     <table aria-colcount="11" aria-rowcount="6">
         <tr aria-colspan="15"><p class="interface" id="in" type="text"></p></tr>
         <tr aria-colspan="15"><p class="interface" id="out" type="text"></p></tr>
-        <tr>
-            <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;">&#8592;</button></td>
-            <td><button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;" onclick="clear()">Cl</button></td>
+        <tr>            
+            <td></td>
+            <td></td>
+            <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;" >=</button></td>
+            <td><button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;" >ans</button></td>
+            <td></td>
+            <td></td>
+            <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;" >&#8592;</button></td>
+            <td><button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;" onclick="clear()" >Cl</button></td>
         </tr>
         <tr >
             <td><button style="border-top-left-radius:7px;" onclick="numskey('1')">1</button></td>
@@ -40,20 +46,20 @@
             <td><button onclick="numskey('8')">8</button></td>
             <td><button onclick="numskey('9')">9</button></td>
             <td><button>x</button></td>
-            <td><button >ℯ&#8319;</button></td>
-            <td><button >ln(x)</button></button></td>
+            <td><button >e&#8319;</button></td>
+            <td><button >ln(x)</button></td>
             <td><button >x&#8315;&#185;</button></td>
-            <td><button>π </button>  </td>
+            <td><button>e </button>  </td>
         </tr>
         <tr >
             <td><button style="border-bottom-left-radius: 7px;" onclick="numskey('0')">0</button></td>
             <td><button onclick="numskey('(')">(</button></td>
             <td><button onclick="numskey(')')">)</button></td>
             <td><button style="border-bottom-right-radius: 7px;">/</button></td>
-            <td><button style="border-bottom-left-radius: 7px;">x&#8319;</button></td>
-            <td><button >x&#178;</button></button></td>
-            <td><button >|x|</button></td>
-            <td><button style="border-bottom-right-radius: 7px;">=</button>  </td>
+            <td><button style="border-bottom-left-radius: 7px;">.</button>  </td>
+            <td><button >x&#8319;</button></td>
+            <td><button >x&#178;</button></td>
+            <td><button style="border-bottom-right-radius: 7px;">|x|</button></td>
         </tr>
     </table>
     </div>
@@ -78,7 +84,7 @@
     }
     .interface{
         background-color: rgba(255, 255, 255, .8);
-        width: 345px;
+        width: 347px;
         border-radius: 7px;
     }
 
@@ -107,9 +113,10 @@
         evExp+=a;
         document.getElementById("in").innerText=vExp;
     }
+
     function clear(){
-        vExp='';
-        evExp='';
-        ducumen.getElementById("in").innerText=vExp;
+        vExp="";
+        evExp="";
+        document.getElementById("in").innerText="";
     }
 </script>
