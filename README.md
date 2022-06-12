@@ -1,6 +1,6 @@
 # calculator
 
-##A simple calculator for my college club task
+## A simple calculator for my college club task
 
 ![image](https://user-images.githubusercontent.com/99308084/173219389-2a4d2ddf-454b-45a1-9904-1aa2f871aaa3.png)
 ![image](https://user-images.githubusercontent.com/99308084/173219402-989cadcd-010c-4988-91d0-255070a144c1.png)
