@@ -16,16 +16,20 @@ button:hover{
 }
 .interface{
     background-color: rgba(255, 255, 255, .8);
-    width: 347px;
+    width: 337px;
     height: fit-content;
     border-radius: 7px;
     overflow: auto;
 }
 #in{
     text-align: left;
+    padding-left: 10px;
+    padding-top: 4px;
 }
 #out{
     text-align: right;
+    padding-top: 4px;
+    padding-right: 10px;
 }
 
 
