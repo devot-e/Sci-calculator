@@ -9,52 +9,52 @@
 <body>
     <div>
     <table aria-colcount="11" aria-rowcount="6">
-        <tr aria-colspan="15"><input type="text"></tr><br>
-        <tr aria-colspan="15"><input type="text"></tr><br>
+        <tr aria-colspan="15"><p class="interface" id="in" type="text"></p></tr>
+        <tr aria-colspan="15"><p class="interface" id="out" type="text"></p></tr>
         <tr>
-            <button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;">&#8592;</button>
-            <button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;">Cl</button><br>
+            <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;">&#8592;</button></td>
+            <td><button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;" onclick="clear()">Cl</button></td>
         </tr>
         <tr >
-            <button style="border-top-left-radius:7px;">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button style="border-top-right-radius:7px;">+</button>
-            <button style="border-top-left-radius:7px;">sin</button>
-            <button >cos</button>
-            <button >tan</button>
-            <button style="border-top-right-radius:7px;">π </button>  <!--under root √-->
-        </tr><br>
+            <td><button style="border-top-left-radius:7px;" onclick="numskey('1')">1</button></td>
+            <td><button onclick="numskey('2')">2</button></td>
+            <td><button onclick="numskey('3')">3</button></td>
+            <td><button style="border-top-right-radius:7px;">+</button></td>
+            <td><button style="border-top-left-radius:7px;">sin</button></td>
+            <td><button >cos</button></td>
+            <td><button >tan</button></td>
+            <td><button style="border-top-right-radius:7px;">π </button>  <!--under root √--></td>
+        </tr>
         <tr >
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button >sin&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
-            <button >cos&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
-            <button >tan&#8315;&#185;</button><!-- &#8315 for sup ⁻-->
-            <button>&#8730;</button>  <!--under root √-->
-        </tr><br>
+            <td><button onclick="numskey('4')">4</button></td>
+            <td><button onclick="numskey('5')">5</button></td>
+            <td><button onclick="numskey('6')">6</button></td>
+            <td><button>-</button></td>
+            <td><button >sin&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
+            <td><button >cos&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
+            <td><button >tan&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
+            <td><button>&#8730;</button>  <!--under root √--></td>
+        </tr>
         <tr >
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>x</button>
-            <button >ℯ&#8319;</button>
-            <button >ln(x)</button></button>
-            <button >x&#8315;&#185;</button>
-            <button>π </button>  
-        </tr><br>
+            <td><button onclick="numskey('7')">7</button></td>
+            <td><button onclick="numskey('8')">8</button></td>
+            <td><button onclick="numskey('9')">9</button></td>
+            <td><button>x</button></td>
+            <td><button >ℯ&#8319;</button></td>
+            <td><button >ln(x)</button></button></td>
+            <td><button >x&#8315;&#185;</button></td>
+            <td><button>π </button>  </td>
+        </tr>
         <tr >
-            <button style="border-bottom-left-radius: 7px;">0</button>
-            <button>(</button>
-            <button>)</button>
-            <button style="border-bottom-right-radius: 7px;">/</button>
-            <button style="border-bottom-left-radius: 7px;">x&#8319;</button>
-            <button >x&#178;</button></button>
-            <button >|x|</button>
-            <button style="border-bottom-right-radius: 7px;">=</button>  
-        </tr><br>
+            <td><button style="border-bottom-left-radius: 7px;" onclick="numskey('0')">0</button></td>
+            <td><button onclick="numskey('(')">(</button></td>
+            <td><button onclick="numskey(')')">)</button></td>
+            <td><button style="border-bottom-right-radius: 7px;">/</button></td>
+            <td><button style="border-bottom-left-radius: 7px;">x&#8319;</button></td>
+            <td><button >x&#178;</button></button></td>
+            <td><button >|x|</button></td>
+            <td><button style="border-bottom-right-radius: 7px;">=</button>  </td>
+        </tr>
     </table>
     </div>
 </body>
@@ -69,10 +69,47 @@
     button{
         width: 40px;
         height: 30px;
-        margin: 2px;
+        border-style: outset;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.01);
+    }
+    button:hover{
         border-style: groove;
     }
-    input{
-        width: 340px;
+    .interface{
+        background-color: rgba(255, 255, 255, .8);
+        width: 345px;
+        border-radius: 7px;
+    }
+
+
+    body {
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-image: linear-gradient(111deg,#4d5f7b,#5da33a);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+    .interface{
+        text-align: right;
+        border-style: inset;
+        height: 30px;
+        margin: 3px;
+        border: 2px;
     }
 </style>
+<script>
+    var vExp="";
+    var evExp="";
+    function numskey(a){
+        vExp+=a;
+        evExp+=a;
+        document.getElementById("in").innerText=vExp;
+    }
+    function clear(){
+        vExp='';
+        evExp='';
+        ducumen.getElementById("in").innerText=vExp;
+    }
+</script>
