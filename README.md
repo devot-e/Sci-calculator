@@ -1,8 +1,10 @@
 # calculator
 
-## A simple calculator for my college club task
+## A simple calculator for my college club task [version 2]
+    see version 1 in branch 1.0
+    
+![image](https://user-images.githubusercontent.com/99308084/174448480-7ed70231-e721-4ac2-b466-5c0a4810b81c.png)
+![image](https://user-images.githubusercontent.com/99308084/174448934-73dbd663-b858-4401-adf4-d6428878a37a.png)
+![image](https://user-images.githubusercontent.com/99308084/174448914-d4134bb4-8d40-4780-8e8e-6ac311a11e7e.png)
 
-![image](https://user-images.githubusercontent.com/99308084/173219549-2fff8028-937d-4570-8721-95f976d799e8.png)
-![image](https://user-images.githubusercontent.com/99308084/173219574-e5c304b4-5f79-4333-9047-4992ff5888f7.png)
-![image](https://user-images.githubusercontent.com/99308084/173219603-dfc7b46f-05f8-4ed0-9198-955d19e40062.png)
 
