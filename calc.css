@@ -1,7 +1,7 @@
 div#calculator{
+    margin-top: 20%;
     display: inline-block;
     align-self: center;   
-    margin-top: 5%;
 }
 button{
     width: 40px;
@@ -14,6 +14,15 @@ button{
 }
 button:hover{
     border-style: groove;
+}
+#equal{
+    width: 85px;
+    background-color: rgb(252, 135, 92);
+    border-color: rgb(229, 169, 148);
+}
+#operator{
+    background-color: rgb(252, 41, 41);
+    border-color: rgb(227, 156, 156);
 }
 .interface{
     background-color:  #15171b;
@@ -56,24 +65,29 @@ overflow: scroll;
 }
 
 #namePlate{
+
+    margin-left: 15%;
     display: inline-block;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-bottom: 5%;
     width: 100px;
     height: 100px;
     position: absolute;
     transform-style: preserve-3d;
     
-    animation: nameplateRotation 4s linear infinite;
+    animation: nameplateRotation 12s linear infinite;
     
+}
+#nameplate:hover{
+    animation-play-state: paused;
 }
 
 @keyframes nameplateRotation{
     0%{
-        transform: translateZ(100px) rotateX(10deg) rotateY(0deg);
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
     }
     100%{
-        transform: translateZ(100px) rotateX(10deg) rotateY(360deg);
+        transform: rotateZ(360deg) rotateX(360deg) rotateY(1080deg);
     }
 }
 
@@ -104,15 +118,18 @@ overflow: scroll;
 }
 #extra{
     background-color: #EEA47FFF;
-    transform: translateZ(-100px);
+    transform: translateZ(-100px) rotateY(180deg);
 }
 #cap{
     background-color: #EEA47FFF;
-    transform: translateY(50px) translateZ(-50px) rotateX(90deg);
+    transform: translateY(50px) translateZ(-50px) rotateX(-90deg);
 }
-
+#floor{
+    background-color: #EEA47FFF;
+    transform: translateY(-50px) translateZ(-50px) rotateX(90deg);
+}
 .column1{
-    text-align: center;
+    
     float: left;
     width: 50%;
 }

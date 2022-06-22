@@ -61,3 +61,11 @@ function backspace(){
     document.getElementById("in").innerText=Exp;
 
 }
+function playPause(){
+    if(document.getElementById('namePlate').style.animationPlayState=="paused"){
+        document.getElementById('namePlate').style.animationPlayState="running";
+    }
+    else{
+        document.getElementById('namePlate').style.animationPlayState="paused"
+    }
+}

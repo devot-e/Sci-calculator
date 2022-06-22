@@ -7,13 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="column1"><div id="namePlate">
-        
+
+    <div class="column1"><div onclick="playPause()" id="namePlate">
+        <p style="color: #EEA47FFF;"> MADE BY.:</p>
         <div id="name"><br><br> Raj Yadav</div>
         <div id="branch"><br><br>CSE(SF)</div>
-        <div id="roll"><br><br>21-100144</div>
-        <div id="extra"></div>
-        <div id="cap"></div>
+        <div id="roll"><br><br>CSE(SF)</div>
+        <div id="extra" ><br><br>Raj Yadav</div>
+        <div id="cap"><br>roll no.<br>21-100144</div>
+        <div id="floor"><br>roll no.<br>21-100144</div>
     </div>
 </div>
 
@@ -24,9 +26,9 @@
         <tr aria-colspan="15"><p class="interface" id="out"  type="text"></p></tr>
         <tr>            
             <td><button style="border-radius: 7px;" onclick="numskey(',')">,</button>  </td>
-            <td></td>
-            <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;" onclick="Eval()">=</button></td>
-            <td><button style="border-top-right-radius:7px;border-bottom-right-radius: 7px;" onclick="numskey(ans)">M</button></td>
+            
+            <td><button style="border-radius: 7px;" onclick="numskey(ans)">M</button></td>
+            <td colspan="2"><button style="border-radius: 7px;" id="equal" onclick="Eval()">=</button></td>
             <td></td>
             <td><button style="border-top-left-radius:7px;border-bottom-left-radius: 7px;" onclick="backspace()" >&#8592;</button></td>
             <td><button onclick="Clear()">C</button></td>
@@ -36,7 +38,7 @@
             <td><button style="border-top-left-radius:7px;" onclick="numskey('1')">1</button></td>
             <td><button onclick="numskey('2')">2</button></td>
             <td><button onclick="numskey('3')">3</button></td>
-            <td><button style="border-top-right-radius:7px;" onclick="numskey('+')">+</button></td>
+            <td><button id="operator" style="border-top-right-radius:7px;" onclick="numskey('+')">+</button></td>
             <td><button style="border-top-left-radius:7px;" onclick="numskey('sin(')">sin</button></td>
             <td><button onclick="numskey('cos(')">cos</button></td>
             <td><button onclick="numskey('tan(')">tan</button></td>
@@ -46,7 +48,7 @@
             <td><button onclick="numskey('4')">4</button></td>
             <td><button onclick="numskey('5')">5</button></td>
             <td><button onclick="numskey('6')">6</button></td>
-            <td><button onclick="numskey('-')">-</button></td>
+            <td><button id="operator" onclick="numskey('-')">-</button></td>
             <td><button onclick="numskey('asin(')">sin&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
             <td><button onclick="numskey('acos(')">cos&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
             <td><button onclick="numskey('atan(')">tan&#8315;&#185;</button><!-- &#8315 for sup ⁻--></td>
@@ -56,7 +58,7 @@
             <td><button onclick="numskey('7')">7</button></td>
             <td><button onclick="numskey('8')">8</button></td>
             <td><button onclick="numskey('9')">9</button></td>
-            <td><button onclick="numskey('*')">x</button></td>
+            <td><button id="operator" onclick="numskey('*')">x</button></td>
             <td><button onclick="numskey('exp(')">e&#8319;</button></td>
             <td><button onclick="numskey('ln(')">ln(x)</button></td>
             <td><button onclick="numskey('inv(')">x&#8315;&#185;</button></td>
@@ -66,7 +68,7 @@
             <td><button style="border-bottom-left-radius: 7px;" onclick="numskey('0')">0</button></td>
             <td><button onclick="numskey('(')">(</button></td>
             <td><button onclick="numskey(')')">)</button></td>
-            <td><button style="border-bottom-right-radius: 7px;" onclick="numskey('/')">/</button></td>
+            <td><button id="operator" style="border-bottom-right-radius: 7px;" onclick="numskey('/')">/</button></td>
             <td><button style="border-bottom-left-radius: 7px;" onclick="numskey('.')">.</button>  </td>
             <td><button onclick="numskey('pow(')">x&#8319;</button></td>
             <td><button onclick="numskey('sq(')">x&#178;</button></td>
