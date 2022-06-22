@@ -15,6 +15,15 @@ button{
 button:hover{
     border-style: groove;
 }
+#equal{
+    width: 85px;
+    background-color: rgb(252, 135, 92);
+    border-color: rgb(229, 169, 148);
+}
+#operator{
+    background-color: rgb(252, 41, 41);
+    border-color: rgb(227, 156, 156);
+}
 .interface{
     background-color:  #15171b;
     color: white;
